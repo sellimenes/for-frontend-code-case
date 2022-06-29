@@ -1,0 +1,19 @@
+div {
+  margin: 2rem 0;
+}
+
+.header {
+  font-size: 5rem;
+  text-align: center;
+  line-height: 5rem;
+}
+
+.red {
+  color: #ff5353;
+}
+
+h2 {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 1rem;
+}
