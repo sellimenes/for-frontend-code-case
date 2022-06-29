@@ -1,70 +1,27 @@
-# Getting Started with Create React App
+# For Frontend Code Case
+### _Kurallar_
+• Framework olarak Next.js kullanılmalı.
+• React Hooks kullanılarak hazırlanmalıdır.
+• Proje GitHub veya Bitbucket'ta public bir repo olarak paylaşılmalı.
+• Projenin temel özellikleri çalışır olmalı.
+• Responsive olarak tüm ekranlarda uygun görünümlü olması.
+### _Beklenenler_
+https://rickandmortyapi.com/ adresinde detaylarına erişebileceğin API’yi kullanarak bir Next.js Uygulaması
+geliştirmeni bekliyoruz. (Dilediğin bir UI kütüphanesi kullanabilirsin)
+## Temel Özellikler
+  - ### Giriş Sayfası
+    - İlgili api kullanılarak ilk 20 karakterlerin bu sayfada listelenmesi sağlanacak (Görsel, title vb.).
+    - Sayfada pagination yapısı olarak apiden diğer sayfalar çekilerek listelenecek.
+    (https://rickandmortyapi.com/api/character?page=1)
+    - Bir karaktere tıklandığında o karakterin detay sayfasına ulaşabilecek.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  - ### Karakter Detay Sayfası
+    - İlgili karakter apiden çekilerek detay sayfasında temel bilgileri listelenecek.
+    - Sayfanın <title> bilgisi karakter başlığı olarak gelecek.
+    
+   - ### İsteğe Bağlı Ekstra Özellikler 
+        - Giriş Sayfasında listelenen karakterlerin virtual scroll kullanılarak sayfalamasının yapılması. Sayfanın
+sonuna scroll ile gelindiğinde diğer sayfanın içeriklerinin otomatik olarak çekilmesi ve sayfa sonuna
+eklenmesi.
+        - Detay sayfasının Server Side Rendering ile dinamik çalışır olması.
+    
