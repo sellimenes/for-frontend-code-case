@@ -1,0 +1,40 @@
+.cardDetail {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 4rem;
+}
+
+.cardDetail img {
+  width: 100%;
+  margin: 0;
+}
+
+.status {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 0 0 2rem;
+  background-color: green;
+  color: #fff;
+}
+
+.charStatus {
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 2.5rem;
+}
+
+.bgRed {
+  background-color: #ff5353;
+  color: white;
+}
+
+.bgGreen {
+  background-color: rgb(23, 126, 23);
+  color: white;
+}
+
+.bgGrey {
+  background-color: rgb(73, 66, 66);
+  color: white;
+}

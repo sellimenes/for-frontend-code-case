@@ -1,87 +1,88 @@
-.card{
-    width: 18%;
-    border-radius: 15px;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
-    transition: transform ease 0.5s;
-    cursor: pointer;
-    margin-bottom: 2rem;
+.card {
+  width: 18%;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+  transition: transform ease 0.5s;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 860px) {
-    .card{
-        width: 23%;
-    }
+  .card {
+    width: 23%;
+  }
 }
 
 @media only screen and (max-width: 720px) {
-    .card{
-        width: 31%;
-    }
+  .card {
+    width: 31%;
+  }
 }
 
 @media only screen and (max-width: 540px) {
-    .card{
-        width: 47%;
-    }
+  .card {
+    width: 47%;
+  }
 }
 
 @media only screen and (max-width: 450px) {
-    .card{
-        width: 90%;
-    }
+  .card {
+    width: 90%;
+  }
 }
 
-.card:hover{
-    transform: translateY(-1.2rem);
+.card:hover {
+  transform: translateY(-1.2rem);
 }
 
-.charImage{
-    position: relative;
-    margin: 0;
+.charImage {
+  position: relative;
+  margin: 0;
 }
 
-.charImage img{
-    width: 100%;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+.charImage img {
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
-.charStatus{
-    position: absolute;
-    font-size: 1.4rem;
-    top: 2%;
-    right: 2%;
-    padding: 0.3rem 1rem;
-    border-radius: 2rem;
+.charStatus {
+  position: absolute;
+  font-size: 1.4rem;
+  top: 2%;
+  right: 2%;
+  padding: 0.3rem 1rem;
+  border-radius: 2rem;
 }
 
-.bgRed{
-    background-color: #ff5353;
-    color: white;
+.bgRed {
+  background-color: #ff5353;
+  color: white;
 }
 
-.bgGreen{
-    background-color: rgb(23, 126, 23);
-    color: white;
+.bgGreen {
+  background-color: rgb(23, 126, 23);
+  color: white;
 }
 
-.bgGrey{
-    background-color: rgb(73, 66, 66);
-    color: white;
+.bgGrey {
+  background-color: rgb(73, 66, 66);
+  color: white;
 }
 
-.meta{
-    padding: 0 1rem;
-    color: #0f124d;
-    margin: 1rem 0;
+.meta {
+  padding: 0 1rem;
+  color: #0f124d;
+  margin: 1rem 0;
 }
 
-.card h2{
-    text-align: left;
-    margin-bottom: 0.5rem;
-    font-size: 2rem;
+.card h2 {
+  text-align: left;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
 }
 
-.card h3{
-    font-size: 1.5rem;
+.card h3 {
+  font-size: 1.5rem;
 }

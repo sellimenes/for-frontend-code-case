@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Header.module.css";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -7,7 +8,9 @@ const Header = () => {
       <h1 className={styles.header}>
         <span className={styles.red}>For</span> Frontend Code Case
       </h1>
-      <h2 className={styles.red}>Rick and Morty Wiki</h2>
+      <Link to={`/`} className={styles.red}>
+        Rick and Morty Wiki
+      </Link>
     </div>
   );
 };
