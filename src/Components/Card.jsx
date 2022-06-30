@@ -4,7 +4,7 @@ import styles from "./Card.module.css";
 const Card = ({results}) => {
   const {name, status, species, image, location} = results; // Results deconstruction
   
-  let statusColor;
+  // Karakterin ölü ya da hayatta durumunu belirtten zımbırtının rengi için
   let charStatus;
   if(status === "Alive"){
     charStatus =  <p className={`${styles.charStatus} ${styles.bgGreen}`}>{status}</p>
@@ -17,7 +17,6 @@ const Card = ({results}) => {
   return <div className={styles.card}>
     <div className={styles.charImage}>
       <img src={image} alt={name} />
-      {/* <p className={`${styles.charStatus}`}>{status}</p> */}
       {charStatus}
     </div>
     <div className={styles.meta}>

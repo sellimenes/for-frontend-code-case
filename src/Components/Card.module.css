@@ -6,8 +6,32 @@
     cursor: pointer;
 }
 
+@media only screen and (max-width: 860px) {
+    .card{
+        width: 23%;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .card{
+        width: 31%;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .card{
+        width: 47%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .card{
+        width: 90%;
+    }
+}
+
 .card:hover{
-    transform: scale(1.05);
+    transform: translateY(-1.2rem);
 }
 
 .charImage{
@@ -23,34 +47,40 @@
 
 .charStatus{
     position: absolute;
+    font-size: 1.4rem;
     top: 2%;
     right: 2%;
     padding: 0.3rem 1rem;
-    background-color: red;
     border-radius: 2rem;
 }
 
 .bgRed{
-    background-color: red;
+    background-color: #ff5353;
     color: white;
 }
 
 .bgGreen{
-    background-color: green;
+    background-color: rgb(23, 126, 23);
     color: white;
 }
 
 .bgGrey{
-    background-color: grey;
+    background-color: rgb(73, 66, 66);
     color: white;
 }
 
 .meta{
-    padding: 0.5rem 1rem;
+    padding: 0 1rem;
     color: #0f124d;
+    margin: 1rem 0;
 }
 
 .card h2{
     text-align: left;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+}
+
+.card h3{
+    font-size: 1.5rem;
 }
