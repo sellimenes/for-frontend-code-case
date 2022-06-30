@@ -1,23 +1,41 @@
-.pagination{
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin: 2rem 0;
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 0.1rem;
+  margin: 2rem 0;
+  list-style-type: none;
 }
 
-.prevBtn,
-.nextBtn{
-    font-size: 2rem;
-    padding: 0.5rem 2rem;
-    width: 15rem;
-    border: 0px;
-    border-radius: 1rem;
-    background-color: #ff5353;
-    color: white;
-    cursor: pointer;
+.liStyle {
+  border: 1px solid #0f124d;
+  padding: 0.2rem 1rem;
+  background-color: #ff5353;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.8rem;
 }
 
-.prevBtn:hover,
-.nextBtn:hover{
-    background-color: #eb4b4b;
+.activeLi {
+  background-color: #0f124d;
+  border-color: #0f124d;
+}
+
+.prevNext {
+  font-size: 1.8rem;
+  font-weight: bold;
+  background-color: #ff5353;
+  padding: 0.2rem 1rem;
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid #0f124d;
+}
+
+.liStyle:hover,
+.prevNext:hover {
+  background-color: #d84646;
+}
+
+.activeLi:hover {
+  background-color: #1b2080;
 }

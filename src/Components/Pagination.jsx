@@ -1,24 +1,21 @@
-import React from 'react'
-import styles from './Pagination.module.css'
+import React from "react";
+import styles from "./Pagination.module.css";
+import ReactPaginate from "react-paginate";
 
-const Pagination = ({setPageNumber, pageNumber}) => {
-
-    const handleNextBtn = () => {
-        
-        setPageNumber((currentPage) => currentPage + 1);
-    }
-
-    const handlePrevBtn = () => {
-        if(pageNumber === 1) return;
-        setPageNumber((currentPage) => currentPage - 1);
-    }
-
+const Pagination = ({ setPageNumber, pageNumber, info }) => {
   return (
-    <div className={styles.pagination}>
-        <button onClick={handlePrevBtn} className={styles.prevBtn}>Previous</button>
-        <button onClick={handleNextBtn} className={styles.nextBtn}>Next</button>
-    </div>
-  )
-}
+    <ReactPaginate
+      pageCount={info.pages}
+      className={styles.pagination}
+      pageClassName={styles.liStyle}
+      activeClassName={styles.activeLi}
+      previousClassName={styles.prevNext}
+      nextClassName={styles.prevNext}
+      onPageChange={(data) => {
+        setPageNumber(data.selected + 1);
+      }}
+    />
+  );
+};
 
-export default Pagination
+export default Pagination;

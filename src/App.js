@@ -1,36 +1,16 @@
-import { useState, useEffect } from "react";
 import "./App.css";
-import Header from "./Components/Header";
-import Cards from "./Components/Cards";
-import Pagination from "./Components/Pagination";
-import SearchBar from "./Components/SearchBar";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./Components/Home/Home";
+import CardDetails from "./Components/CardDetails";
 
 function App() {
-  const [pageNumber, setPageNumber] = useState(1);
-  const [fetchedData, setFetchedData] = useState([]);
-  const [search, setSearch] = useState("");
-  const { info, results } = fetchedData;
-
-  let api = `https://rickandmortyapi.com/api/character/?page=${pageNumber}&name=${search}`;
-
-  useEffect(() => {
-    (async function () {
-      let data = await fetch(api).then((res) => res.json());
-      setFetchedData(data);
-    })();
-  }, [api]);
-
   return (
-    <>
-      <Header />
-      <SearchBar setSearch={setSearch} setPageNumber={setPageNumber} />
-      {info ? (
-        <Cards results={results} />
-      ) : (
-        <p className="noCharacter">Nothing here. 🙄</p>
-      )}
-      <Pagination setPageNumber={setPageNumber} pageNumber={pageNumber} />
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path=":id" element={<CardDetails />} />
+      </Routes>
+    </Router>
   );
 }
 
