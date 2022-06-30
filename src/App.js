@@ -7,10 +7,11 @@ import SearchBar from "./Components/SearchBar";
 
 function App() {
   const [pageNumber, setPageNumber] = useState(1);
-  const[fetchedData, setFetchedData] = useState([])
+  const[fetchedData, setFetchedData] = useState([]);
+  const[search, setSearch] = useState("");
   const {info, results} = fetchedData;
 
-  let api = `https://rickandmortyapi.com/api/character/?page=${pageNumber}`;
+  let api = `https://rickandmortyapi.com/api/character/?page=${pageNumber}&name=${search}`;
 
   useEffect(() => {
     (async function () {
@@ -22,7 +23,7 @@ function App() {
   return (
     <>
       <Header />
-      <SearchBar/>
+      <SearchBar setSearch={setSearch} setPageNumber={setPageNumber}/>
       <Cards results={results} />
       <Pagination setPageNumber={setPageNumber} pageNumber={pageNumber}/>
     </>
