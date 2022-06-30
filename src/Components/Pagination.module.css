@@ -1,0 +1,23 @@
+.pagination{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.prevBtn,
+.nextBtn{
+    font-size: 2rem;
+    padding: 0.5rem 2rem;
+    width: 15rem;
+    border: 0px;
+    border-radius: 1rem;
+    background-color: #ff5353;
+    color: white;
+    cursor: pointer;
+}
+
+.prevBtn:hover,
+.nextBtn:hover{
+    background-color: #eb4b4b;
+}

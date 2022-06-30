@@ -2,8 +2,11 @@ import { useState, useEffect } from "react";
 import "./App.css";
 import Header from "./Components/Header";
 import Cards from "./Components/Cards";
+import Pagination from './Components/Pagination'
+import SearchBar from "./Components/SearchBar";
+
 function App() {
-  const [pageNumber, letPageNumber] = useState(1);
+  const [pageNumber, setPageNumber] = useState(1);
   const[fetchedData, setFetchedData] = useState([])
   const {info, results} = fetchedData;
 
@@ -19,7 +22,9 @@ function App() {
   return (
     <>
       <Header />
+      <SearchBar/>
       <Cards results={results} />
+      <Pagination setPageNumber={setPageNumber} pageNumber={pageNumber}/>
     </>
   );
 }

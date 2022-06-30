@@ -4,7 +4,6 @@ import Card from './Card'
 
 const Cards = ({results}) => {
   let display;
-  console.log(results);
   if(results){
     display = results.map((character) => {
       return <Card key={character.id} results={character} />

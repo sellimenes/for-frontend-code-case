@@ -4,6 +4,7 @@
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
     transition: transform ease 0.5s;
     cursor: pointer;
+    margin-bottom: 2rem;
 }
 
 @media only screen and (max-width: 860px) {

@@ -3,7 +3,7 @@ import styles from "./Header.module.css";
 
 const Header = () => {
   return (
-    <div>
+    <div className={styles.header}>
       <h1 className={styles.header}>
         <span className={styles.red}>For</span> Frontend Code Case
       </h1>
