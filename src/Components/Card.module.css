@@ -1,0 +1,20 @@
+.card{
+    width: 18%;
+    border: 1px solid blue;
+    border-radius: 15px;
+}
+
+.card img{
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.meta{
+    padding: 0.5rem 1rem;
+}
+
+.card h2{
+    text-align: left;
+    margin-bottom: 1rem;
+}

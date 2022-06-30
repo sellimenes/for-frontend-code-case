@@ -1,0 +1,8 @@
+.cardsWrapper{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
