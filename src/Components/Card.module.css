@@ -1,17 +1,53 @@
 .card{
     width: 18%;
-    border: 1px solid blue;
     border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+    transition: transform ease 0.5s;
+    cursor: pointer;
 }
 
-.card img{
+.card:hover{
+    transform: scale(1.05);
+}
+
+.charImage{
+    position: relative;
+    margin: 0;
+}
+
+.charImage img{
     width: 100%;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
 
+.charStatus{
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    padding: 0.3rem 1rem;
+    background-color: red;
+    border-radius: 2rem;
+}
+
+.bgRed{
+    background-color: red;
+    color: white;
+}
+
+.bgGreen{
+    background-color: green;
+    color: white;
+}
+
+.bgGrey{
+    background-color: grey;
+    color: white;
+}
+
 .meta{
     padding: 0.5rem 1rem;
+    color: #0f124d;
 }
 
 .card h2{
