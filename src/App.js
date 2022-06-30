@@ -19,7 +19,7 @@ function App() {
   return (
     <>
       <Header />
-      <Cards />
+      <Cards results={results} />
     </>
   );
 }
