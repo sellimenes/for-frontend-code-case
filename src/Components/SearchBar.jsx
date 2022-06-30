@@ -1,25 +1,24 @@
-import React from 'react'
-import styles from './SearchBar.module.css'
+import React from "react";
+import styles from "./SearchBar.module.css";
 
-// Search submit olduğunda sayfa yenilenmesin
-const SearchBar = ({setSearch, setPageNumber}) => {
-    const handleSearch = (e) => {
-        e.preventDefault();
-    }
-    
+const SearchBar = ({ setSearch, setPageNumber }) => {
   return (
-    <form onSubmit={handleSearch}>
-        <input 
-            onChange={e => {
-                setSearch(e.target.value); 
-                setPageNumber(1);
-                }} 
-            type="text" 
-            placeholder='Search Characters'
-        />
-        <button>Search</button>
+    <form
+      onSubmit={(e) => {
+        e.preventDefault();
+      }}
+    >
+      <input
+        onChange={(e) => {
+          setSearch(e.target.value);
+          setPageNumber(1);
+        }}
+        type="text"
+        placeholder="Search Characters"
+      />
+      <button>Search</button>
     </form>
-  )
-}
+  );
+};
 
-export default SearchBar
+export default SearchBar;
