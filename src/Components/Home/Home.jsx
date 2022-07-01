@@ -1,5 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import {Helmet} from 'react-helmet'
 import Header from "../Header";
 import Cards from "../Cards";
 import Pagination from "../Pagination";
@@ -24,20 +25,25 @@ const Home = () => {
 
   return (
     <>
-      <Header />
-      <SearchBar setSearch={setSearch} setPageNumber={setPageNumber} />
-      {info ? (
-        <Cards results={results} />
-      ) : (
-        <p className="noCharacter">Nothing here. 🙄</p>
-      )}
-      {info && (
-        <Pagination
-          info={info}
-          setPageNumber={setPageNumber}
-          pageNumber={pageNumber}
-        />
-      )}
+      <Helmet>
+        <title>For Frontend Code Case - Selim</title>
+      </Helmet>
+      <div>
+        <Header />
+        <SearchBar setSearch={setSearch} setPageNumber={setPageNumber} />
+        {info ? (
+          <Cards results={results} />
+        ) : (
+          <p className="noCharacter">Nothing here. 🙄</p>
+        )}
+        {info && (
+          <Pagination
+            info={info}
+            setPageNumber={setPageNumber}
+            pageNumber={pageNumber}
+          />
+        )}
+      </div>
     </>
   );
 };

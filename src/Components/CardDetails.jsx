@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import styles from "./CardDetails.module.css";
 import Header from "./Header";
 import { useParams } from "react-router-dom";
+import {Helmet} from 'react-helmet'
 
 const CardDetails = ({results}) => {
   let { id } = useParams();
@@ -12,6 +13,7 @@ const CardDetails = ({results}) => {
 
   let api = `https://rickandmortyapi.com/api/character/${id}`;
 
+  // Sayfa falan değiştiğinde API'yi güncelliyor.
   useEffect(() => {
     (async function () {
       let data = await fetch(api).then((res) => res.json());
@@ -38,6 +40,10 @@ const CardDetails = ({results}) => {
 
   return (
     <>
+      <Helmet>
+        <title>{name}</title>
+      </Helmet>
+      <div>
       <Header />
       {fetchedData ? (
         <div className={styles.cardDetail}>
@@ -53,6 +59,7 @@ const CardDetails = ({results}) => {
           </ul>
         </div>
       ): (<p className={styles.loading}>LOADING...</p>)}
+      </div>
     </>
   );
 };
