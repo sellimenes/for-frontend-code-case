@@ -6,6 +6,8 @@
 
 🔷 Demo: https://for-frontend-code-case-oca3awbie-sellimenes.vercel.app/
 
+![image](https://user-images.githubusercontent.com/23125375/176843241-7b0d721f-475b-4e72-94c8-2956e0a1b046.png)
+
 🔷 Kullanılan paketler:
 - React Helmet (Dinamik başlık için)
 - React Router (Sayfa geçişleri için)
