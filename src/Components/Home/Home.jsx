@@ -5,6 +5,7 @@ import Header from "../Header";
 import Cards from "../Cards";
 import Pagination from "../Pagination";
 import SearchBar from "../SearchBar";
+import styles from './Home.module.css'
 
 const Home = () => {
   const [pageNumber, setPageNumber] = useState(1);
@@ -32,7 +33,11 @@ const Home = () => {
         <Header />
         <SearchBar setSearch={setSearch} setPageNumber={setPageNumber} />
         {info ? (
-          <Cards results={results} />
+          <div>
+            <p className={styles.charNumber}>Total Characters: {info?.count}</p>
+            <Cards results={results} />
+          </div>
+          
         ) : (
           <p className="noCharacter">Nothing here. 🙄</p>
         )}

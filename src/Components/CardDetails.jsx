@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "./CardDetails.module.css";
 import Header from "./Header";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import {Helmet} from 'react-helmet'
 
 const CardDetails = ({results}) => {
@@ -47,6 +47,7 @@ const CardDetails = ({results}) => {
       <Header />
       {fetchedData ? (
         <div className={styles.cardDetail}>
+          <Link to={`/`} className={styles.btnHome}>Home</Link>
           <img src={image} alt={name} />
           {charStatus}
           <h2 className={styles.charName}>{name}</h2>
