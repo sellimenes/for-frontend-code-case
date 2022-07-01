@@ -4,7 +4,7 @@
 
 🔷 07.01.2022
 
-🔷 Netlify demo: https://sellimenes-basic-menu-template-react.netlify.app/
+🔷 Demo: https://for-frontend-code-case-oca3awbie-sellimenes.vercel.app/
 
 🔷 Kullanılan paketler:
 - React Helmet (Dinamik başlık için)
