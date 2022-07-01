@@ -19,6 +19,9 @@ const Home = () => {
       setFetchedData(data);
     })();
   }, [api]);
+
+  console.log(fetchedData);
+
   return (
     <>
       <Header />

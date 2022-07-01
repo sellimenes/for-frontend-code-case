@@ -3,10 +3,12 @@ import styles from "./CardDetails.module.css";
 import Header from "./Header";
 import { useParams } from "react-router-dom";
 
-const CardDetails = (results) => {
+const CardDetails = ({results}) => {
   let { id } = useParams();
   const [fetchedData, setFetchedData] = useState([]);
-  const { info, setInfo } = fetchedData;
+  let { name, location, origin, species, status, image, gender, episode } =
+    fetchedData;
+  console.log(fetchedData);
 
   let api = `https://rickandmortyapi.com/api/character/${id}`;
 
@@ -17,10 +19,8 @@ const CardDetails = (results) => {
     })();
   }, [api]);
 
-  let { name, location, origin, species, status, image, gender, episode } =
-    fetchedData;
-  console.log(info);
-
+  
+  // Karakterin yaşam durumuna göre rengini değiştirme durumu
   let charStatus;
   if (status === "Alive") {
     charStatus = (
@@ -39,20 +39,20 @@ const CardDetails = (results) => {
   return (
     <>
       <Header />
-      {!info && (
+      {fetchedData ? (
         <div className={styles.cardDetail}>
           <img src={image} alt={name} />
           {charStatus}
           <h2>{name}</h2>
-          <ul>
-            <li>Type: {species}</li>
-            <li>Gender: {gender}</li>
-            <li>Origin: {origin.name}</li>
-            <li>Seen: {episode.length} time(s)</li>
-            <li>Last Seen: {location.name}</li>
+          <ul className={styles.metaLi}>
+            <li><span className={styles.detailSpan}>Type:</span> {species}</li>
+            <li><span className={styles.detailSpan}>Gender:</span> {gender}</li>
+            <li><span className={styles.detailSpan}>Origin:</span> {origin?.name}</li>
+            <li><span className={styles.detailSpan}>Seen in:</span> {episode?.length} episode(s)</li>
+            <li><span className={styles.detailSpan}>Last Seen:</span> {location?.name}</li>
           </ul>
         </div>
-      )}
+      ): (<p className={styles.loading}>LOADING...</p>)}
     </>
   );
 };

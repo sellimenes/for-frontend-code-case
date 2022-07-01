@@ -1,6 +1,6 @@
 .cardDetail {
   width: 90%;
-  max-width: 1200px;
+  max-width: 400px;
   margin: auto;
   margin-top: 4rem;
 }
@@ -37,4 +37,21 @@
 .bgGrey {
   background-color: rgb(73, 66, 66);
   color: white;
+}
+
+.loading{
+  text-align: center;
+  font-size: 5rem;
+  font-weight: bold;
+  margin-top: 10rem;
+}
+
+.metaLi{
+  list-style-type: none;
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+
+.detailSpan{
+  font-weight: bold;
 }
