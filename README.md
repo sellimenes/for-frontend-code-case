@@ -1,4 +1,17 @@
 # For Frontend Code Case
+---
+🔷 Selim Enes Erdogan
+🔷 07.01.2022
+🔷 Netlify demo: https://sellimenes-basic-menu-template-react.netlify.app/
+🔷 Kullanılan paketler:
+- React Helmet (Dinamik başlık için)
+- React Router (Sayfa geçişleri için)
+- React Paginate (Sayfa işlemleri için)
+ 
+🔷 Kullanılan Hooklar:
+- useState
+- useEffect
+---
 ### _Kurallar_
 - Framework olarak Next.js kullanılmalı.
 - React Hooks kullanılarak hazırlanmalıdır.
