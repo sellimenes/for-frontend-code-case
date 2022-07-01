@@ -1,8 +1,11 @@
 # For Frontend Code Case
----
+
 🔷 Selim Enes Erdogan
+
 🔷 07.01.2022
+
 🔷 Netlify demo: https://sellimenes-basic-menu-template-react.netlify.app/
+
 🔷 Kullanılan paketler:
 - React Helmet (Dinamik başlık için)
 - React Router (Sayfa geçişleri için)
