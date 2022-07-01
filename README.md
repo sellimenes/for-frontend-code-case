@@ -6,7 +6,7 @@
 
 🔷 Demo: https://for-frontend-code-case.vercel.app/
 
-![image](https://user-images.githubusercontent.com/23125375/176843241-7b0d721f-475b-4e72-94c8-2956e0a1b046.png)
+![image](https://user-images.githubusercontent.com/23125375/176853566-64a37ee6-b80d-4138-b934-d8bbc218c1cf.png)
 
 🔷 Kullanılan paketler:
 - React Helmet (Dinamik başlık için)
