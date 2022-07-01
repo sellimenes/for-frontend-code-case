@@ -36,3 +36,17 @@ form button:hover {
   background-color: transparent;
   color: #ff5353;
 }
+
+@media only screen and (max-width: 600px) {
+  form{
+    margin: 0 auto 2rem;
+  }
+
+  form input{
+    font-size: 1.5rem;
+  }
+
+  form button{
+    padding: 0.1rem 1.5rem;
+  }
+}

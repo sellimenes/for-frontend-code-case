@@ -49,7 +49,7 @@ const CardDetails = ({results}) => {
         <div className={styles.cardDetail}>
           <img src={image} alt={name} />
           {charStatus}
-          <h2>{name}</h2>
+          <h2 className={styles.charName}>{name}</h2>
           <ul className={styles.metaLi}>
             <li><span className={styles.detailSpan}>Type:</span> {species}</li>
             <li><span className={styles.detailSpan}>Gender:</span> {gender}</li>
